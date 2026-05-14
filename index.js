@@ -1,13 +1,10 @@
-// Simple JavaScript for the website
+document.addEventListener('DOMContentLoaded', function () {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const links = document.querySelectorAll('nav a');
 
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Page loaded');
-    
-    // Example: Add click event to buttons
-    const buttons = document.querySelectorAll('button');
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
-            alert('Button clicked!');
-        });
+    links.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+        }
     });
 });

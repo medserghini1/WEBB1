@@ -3,25 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Services</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Main</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <div class="brand"><a href="index.html">Acme Digital</a></div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <h1>Home Page</h1>
-        <p>Welcome to the home page of our website.</p>
-        <p>Here you can find information about our services.</p>
+        <section class="section-card">
+            <h2>Our services</h2>
+            <p>We deliver polished website experiences that combine strong visuals with fast, accessible performance.</p>
+        </section>
+        <section class="service-grid">
+            <article class="service-card section-card">
+                <h3>Strategic design</h3>
+                <p>We build pages with clear hierarchy, concise messaging, and visual consistency across every screen.</p>
+            </article>
+            <article class="service-card section-card">
+                <h3>Responsive development</h3>
+                <p>Every layout adapts for desktop, tablet, and mobile so your audience enjoys a seamless experience.</p>
+            </article>
+            <article class="service-card section-card">
+                <h3>Content-ready pages</h3>
+                <p>Your website will include polished sections for features, benefits, contact, and trust-building content.</p>
+            </article>
+        </section>
     </main>
+    <footer>© 2026 Acme Digital. Crafted for clarity and trust.</footer>
     <script src="index.js"></script>
 </body>
 </html>

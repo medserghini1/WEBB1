@@ -8,27 +8,43 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Main</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <div class="brand"><a href="index.html">Acme Digital</a></div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <h1>Contact Us</h1>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea><br>
-            <button type="submit">Send</button>
-        </form>
+        <section class="section-card">
+            <h2>Contact our team</h2>
+            <p>Have a project idea or question? Send us a message and we will respond within one business day.</p>
+        </section>
+        <section class="form-card">
+            <h2>Send a message</h2>
+            <form>
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name">
+                </div>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com">
+                </div>
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your needs"></textarea>
+                </div>
+                <button type="submit" class="button primary">Send message</button>
+            </form>
+        </section>
     </main>
+    <footer>© 2026 Acme Digital. Crafted for clarity and trust.</footer>
     <script src="index.js"></script>
 </body>
 </html>

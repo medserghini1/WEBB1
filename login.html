@@ -8,25 +8,37 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Main</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <div class="brand"><a href="index.html">Acme Digital</a></div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <h1>Login</h1>
-        <form id="loginForm">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username"><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password"><br>
-            <button type="submit">Login</button>
-        </form>
+        <section class="login-card">
+            <h2>Secure login</h2>
+            <p>Enter your credentials to access the dashboard and account settings.</p>
+            <form id="loginForm">
+                <div class="form-field">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Username">
+                </div>
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </div>
+                <button type="submit" class="button primary">Sign in</button>
+                <p id="loginMessage" class="form-message"></p>
+            </form>
+        </section>
     </main>
+    <footer>© 2026 Acme Digital. Crafted for clarity and trust.</footer>
     <script src="login.js"></script>
 </body>
 </html>
